@@ -1,0 +1,138 @@
+@import url("./reset.css");
+
+*, html{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #47cec011;
+    height: 100vh;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    margin: 0px 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    
+}
+section.left{
+    position: relative;
+    width: 550px;
+    margin-top: 130px;
+
+}
+.logo{
+    position: absolute;
+    width: 150px;
+    left: -12px;
+    top: -100px;
+
+}
+.heading{
+    width: 100%;
+    
+}
+.title{
+   margin-top: 80px; 
+   font-size: 40px;
+   letter-spacing: 2px;
+}
+p.content{
+    font-size: 20px;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    background-color: #ffffff;
+    height: 650px;
+
+
+}
+form.signUp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px 30px;
+}
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.special-item{
+    grid-column: span 2;
+}
+
+.form-item .special-item .password-toggle{
+    position: relative;
+}
+.password-toggle img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 175px;
+    transform: translateY(150%);
+}
+.form-item .dob{
+    position: relative;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+.dob img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 175px;
+    transform: translateY(150%);
+}
+label{
+    font-size: 16px;
+    padding-bottom: 5px;
+    
+}
+input,select, button{
+    width: 100%;
+    height: 45px;
+    border:  0.3px solid #dddddd69;
+    
+}
+select{
+    background-color: #ffffff;
+}
+input:focus,
+select:focus{
+    border: 0.3px solid #2EC4B6;
+    outline: none;
+
+}
+::placeholder,input, option{
+    padding-left: 8px;
+}
+
+button.special-item{
+    background-color: #2EC4B6;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+.terms{
+    max-width: 600px;
+    font-size: 14px;
+    text-align: center;
+}

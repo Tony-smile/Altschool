@@ -1,0 +1,101 @@
+@import url("./reset.css");
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0d169b49;
+  width: 100%;
+  height: 100vh;
+ 
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 150px;
+background-color: #3128a760;
+width: 650px;
+box-shadow: 0px 0px 5px 2px rgba(6, 4, 34, 0.164); 
+border-radius: 10px !important;
+}
+.pic-card {
+    position: relative;
+  height: 350px;
+  max-width: 650px;
+ 
+}
+img {
+  width: 650px;
+  height: 350px;
+  border-radius: 10px 10px 0px 0px;
+
+  /* box-shadow: 0px 0px 5px 2px rgba(6, 4, 34, 0.164);  */
+}
+
+.content-card {
+  width: 650px;
+  height: 250px;
+  background-color: #ffffff;
+  /* border-radius: 0px 0px 10px 10px; */
+  /* box-shadow: 0px 5px 2px rgba(6, 4, 34, 0.164);  */
+  padding: 0px 40px;
+  padding-top: 20px;
+  color: rgba(31, 31, 31, 0.87); 
+
+}
+.content-text{
+    color: rgba(31, 31, 31, 0.87); 
+    font-size: 24px;
+    text-align: justify;
+    line-height: 1.2;
+  
+}
+.title{
+    margin-bottom: 20px;
+}
+span{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.589);
+}
+.new-tag{
+    position: absolute;
+    background-color: #fafa96;
+    text-align: center;
+    padding: 5px 30px;
+    border-radius: 0px 300px 300px 0px;
+    top: 10px;
+    left: -10px;
+    box-shadow: 0px 0px 4px 1px rgba(146, 141, 105, 0.37);
+    color: rgba(34, 34, 34, 0.87); 
+}
+
+
+@media screen and (max-width: 425px){
+    body{
+        display: block;
+        margin: auto;
+    }
+    .main{
+        max-width: 425px;
+    }
+    .pic-card{
+        width: 425px;
+    }
+
+    img{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .content-card{
+        width: 100%;
+        height: 350px;
+        padding: 0 15px;
+    }
+}

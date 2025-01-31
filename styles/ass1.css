@@ -1,0 +1,53 @@
+@import url("./reset.css"); 
+
+body{
+    height: 100vh; 
+    background-color: #131212;  
+    margin: 200px 100px 200px 100px;
+}
+
+.main{
+    
+    display: flex;
+    flex-direction: column;
+   
+    height: 90%;
+    width: 100%; 
+    justify-content: center;
+    align-items: start;
+    
+} 
+
+.head-title{
+    background-color: #FF1493;
+    position: absolute;
+    top: -20px;
+    font-weight: bolder;
+    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 15px;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10pxrgb(0, 0, 0, 0.2);
+} 
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; 
+    max-width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 5px 10pxrgb(0, 0, 0, 0.2);
+
+}
+.content{
+    width: 80%;
+    margin-top: 150px;
+position: relative;
+font-size: 21px;
+}
