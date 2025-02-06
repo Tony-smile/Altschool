@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WP Pusher</title>
     <link rel="stylesheet" href="./styles/ass5.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
@@ -31,28 +31,31 @@
       <!-- Left section -->
       <div class="left-section">
         <h2>Checkout</h2>
+        <hr>
         <div class="form">
           <div class="form-sec">
             <h3>Your Basic Information</h3>
-            <div class="form-item">
-              <label for="firs-name">First Name</label>
-              <input
-                type="text"
-                name="firs-name"
-                id="fname"
-                placeholder="jane"
-              />
+            <div class="form-row">
+              <div class="form-item name">
+                <label for="firs-name">First Name</label>
+                <input
+                  type="text"
+                  name="firs-name"
+                  id="fname"
+                  placeholder="jane"
+                />
+              </div>
+              <div class="form-item name">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="lname"
+                  placeholder="Doe"
+                />
+              </div>
             </div>
-            <div class="form-item">
-              <label for="last-name">Last Name</label>
-              <input
-                type="text"
-                name="last-name"
-                id="lname"
-                placeholder="Doe"
-              />
-            </div>
-            <div class="form-item">
+            <div class="form-item email">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -62,10 +65,14 @@
               />
             </div>
           </div>
-          <div class="form-sec">
+          <hr class="offset">
+          <div class="form-sec Payment">
             <h3>Your Payment Information</h3>
-            <label for="credit-card">Credit Card</label>
+            <label class="clabel" for="credit-card">Credit Card</label>
+            <div class="form-row">
+              
             <div class="fom-item card-input">
+              
               <input
                 type="number"
                 name="card-number"
@@ -73,20 +80,22 @@
                 placeholder="Card Number"
               />
               <input
-                type="date"
+                type="text"
                 name="expiry date"
                 id="edate"
                 placeholder="MM/YY"
               />
-              <input type="number" name="cvc" id="cvc" placeholder="CVC" />
+              <input type="number" name="cvc" id="cvc" placeholder="CVC" maxlength="3"/>
+            </div>
             </div>
           </div>
-          <div class="form-sec">
-            <button class="btn">BUy WP Pusher</button>
-            <p class="help-text">
-              Need any help? Don't hesitate to <a href="#">contact</a> support!
+          <hr>
+          <div class="form-sec last">
+            <button class="btn">Buy WP Pusher</button>
+            <p class="help-text-left">
+              <b>Need any help?</b> Don't hesitate to <a href="#">contact</a> support!
             </p>
-            <span class="stripe-badge">Powered by <b>stripe</b></span>
+            <span class="stripe-badge">Powered by   <b>stripe</b></span>
           </div>
         </div>
       </div>
@@ -95,7 +104,11 @@
         <div class="top">
           <div class="top-sec">
             <h3>Freelance</h3>
-          <p class="price-plan">$ 99 / year</p>
+          <p class="price-plan"> 
+            <sup class="currency">$</sup> 
+            <span class="amount">99</span>
+            <sub class="duration">/ year</sub>
+          </p>
           <p class="sub-text">Automatically renews after 1 year</p>
           </div>
           <div class="top-sec">
@@ -106,12 +119,14 @@
             </ul>
           </div>
           <div class="top-sec">
-            <p class="help-text">
+            <p class="help-text-right">
               Need <b>20</b> client sites? <br>
               <b><a href="#">Switch to the Agency plan.</a></b>
             </p>
           </div>
+          
         </div>
+        <hr>
         <div class="bottom">
           <p class="testimonial">
             FTP is horrible to deal with. <b>WP Pusher</b> solves that issue, and the customer support is awesome!
@@ -127,5 +142,20 @@
     <div class="footer">
       &copy; 2018 WP Pusher IVS - <a href="#">Terms of Service</a>
     </div>
+
+    <script>
+      document.getElementById('edate').addEventListener('input', function (e) {
+          let value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+          if (value.length >= 2) {
+              value = value.substring(0, 2) + '/' + value.substring(2, 4);
+          }
+          e.target.value = value;
+      });
+      document.getElementById('cvc').addEventListener(
+      'input', function (e){
+        let value = e.target.value.replace(/\D/g, '');
+        e.target.value = value.substring(0, 3);
+      });
+      </script>
   </body>
 </html>
