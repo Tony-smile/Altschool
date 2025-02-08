@@ -472,11 +472,22 @@ position: absolute;
   }
 
   .banner-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 420px;
+    height: 460px;
     background: fixed #1e3448;
     position: relative;
 
+  }
+  .banner-two > p{
+    color: #c7c7c7cb;
+    left: 2px;
+    bottom: 0;
+    position: absolute;
+    font-size: 10px;
   }
   .banner-two .left-pattern{
     position: absolute;
@@ -498,23 +509,80 @@ position: absolute;
     width: 100%;
     position: relative;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
   }
+  .faqs-container{
+    max-width: 900px;
+  }
+  
   .faqs .left-pattern{
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+  }
+  .faqs .title{
+    position: relative;
+    font-size: 36px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+  .faqs .title img{
+    position: absolute;
+    top: -18px;
+    left: -55px;
+  }
+.faqs-item{
+  border-bottom: 1px solid rgba(184, 184, 184, 0.589);
+  padding: 30px 0px;
+}
+  .faqs-item .question{
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .faqs-item .answer{
+    display: none;
+    max-width: 800px;
+  }
+  .faqs-container .faqs-item:last-child{
+    border-bottom: none;
   }
 
+  .show{
+    display: block;
+
+  }
+  .question{
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+
+  }
+  .question::after{
+    content: url('../assets/images/Frame\ 72cross-icon.svg');
+    right: 0;
+    font-size: 18px;
+    
+  }
+  .faqs-item:hover .answer{
+    display: block;
+  }
+  .faqs-item:hover .question::after{
+    content: url('../assets/images/minusminus.svg');
+    right: 0;
+    font-size: 18px;
+  }
   .faqs .right-pattern{
     position: absolute;
     right: 0;
-    top: 50%;
-    bottom: 0;
+    bottom: 0%;
   
   }
   .footer{
-    margin-top: 50px;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,13 +593,45 @@ position: absolute;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: fixed #1e3448 ;
     position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    color: #ffffff;
+  }
+  .add-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    margin-top: 90px;
   }
+.footer-heading > p{
+  color: #c7c7c7a9;
+    left: 5px;
+    bottom: 10px;
+    position: absolute;
+    font-size: 14px;
 
+}
+.footer-heading a{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #287cfe;
+  padding: 15px 80px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.banner.footer-heading h2{
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 1.3px;
+}
   .footer-heading .right-pattern{
     position: absolute;
     left: 0;
@@ -546,6 +646,104 @@ position: absolute;
     transform: translateY(-50%);
     height: 100%;
   }
+  .test-url{
+    display: flex;
+    flex-direction: column;
+   padding: 40px 30px;
+    align-items: center;
+    max-width: 600px;
+    height: 340px;
+    gap: 20px;
+    background-color: #ffffff;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .form-container{
+    max-width: 460px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* .input-group{
+    width: 100%;
+  } */
+  /* .input-group:first-child, .submit-btn{
+    grid-column: 1/-1;
+  } */
+  .middle-group{
+   display: grid;
+   grid-template-columns:repeat(2, 1fr) ;
+   gap: 10px;
+  }
+  /* .middle-group .input-group{
+    flex-grow: 1;
+  }
+  .middle-group .input-group
+:first-child{
+  flex: 1 1 55%;
+} */
+  .input-group input, .input-group select{
+    padding: 14px;
+    border-radius: 10px;
+    width: 100%;
+  }
+  span img{
+    height: 24px;
+    width: 24px;
+  }
+  ::placeholder{
+    padding-left: 10px;
+    color: #287cfe;
+  }
+  .middle-group select{
+   appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-color: white; 
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+  }
+
+ 
+  select, input{
+    background: transparent;
+    border: 0.3px solid #287cfe;
+    color: #287cfe;
+    outline: none;
+  }
+  /* .middle-group .input-group:last-child{
+    flex: 1 1 45%;
+  } */
+  .terms-text{
+    max-width: 460px;
+    padding: 5px 10px;
+    color: #287cfe;
+  }
+  .terms-text b a{
+    text-decoration: none;
+    color: #287cfe;
+  }
+  .submit-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #287cfe;
+    border-radius: 50px;
+  }
   .bottom-footer{
     display: flex;
     flex-direction: row;
@@ -553,7 +751,9 @@ position: absolute;
     align-items: flex-start;
     width: 100%;
     position: relative;
+    gap: 10px;
     height: auto;
+    margin-top: 50px;
 
   }
   .bottom-footer .left-pattern{
@@ -569,11 +769,53 @@ position: absolute;
   .footer-links{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto;
+    max-width: 900px;
+    gap: 0;
+    margin-bottom: 100px;
   }
 
   .footer-end{
     position: absolute;
     bottom: 5%;
     right: 10%;
+    color: rgba(0, 0, 0, 0.788);;
+  }
+  .brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    width: 220px;
+  }
+  .social-icons{
+    display: flex;
+    gap: 16px;
+  }
+  .social-icons a img{
+    height: 24px;
+    width: 24px;
+  }
+  .logo img{
+    height: 40px;
+    width: 155px;
+  } 
+  .footer-item ul{
+    padding: 0;
+  }
+   .footer-item ul a{
+    color: rgba(0, 0, 0, 0.788);
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+    
+  }
+  .footer-item h3{
+    padding-bottom: 10px;
+  }
+  .footer-item{
+    max-width: 300px;
+    height: auto;
+    padding: 0px 30px;
   }
