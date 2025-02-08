@@ -15,26 +15,34 @@
     />
   </head>
   <body>
-    <header class="bar">
-      <div class="logo">
-        <img src="./assets/images/Logo.svg" alt="Scissor logo" />
-      </div>
-      <nav class="navbar">
-        <ul class="nav-item">
-          <li><a href="#">My URLs</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Analytics</a></li>
-          <li><a href="#">FAQs</a></li>
-        </ul>
-        <div class="offer">
-          <a href="#" class="cta-buttons">Log in</a>
-          <a href="#" class="cta-buttons">Try for free</a>
-        </div>
-      </nav>
-    </header>
     <dviv class="main">
       <div class="section-one">
+        <header class="bar">
+          <div class="logo">
+            <img src="./assets/images/Logo.svg" alt="Scissor logo" />
+          </div>
+          <nav class="navbar">
+            <ul class="nav-item">
+              <li class="first"><a href="#">My URLs</a></li>
+              <li class="dropdown">
+                
+                <a href="#">Features</a>
+                <ul class="dropdown-select">
+                  <li><a href="#">Feature 1</a></li>
+                  <li><a href="#">Feature 2</a></li>
+                  <li><a href="#">Feature 3</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Analytics</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </nav>
+          <div class="offer">
+            <a href="#" class="cta-buttons">Log in</a>
+            <a href="#" class="cta-buttons">Try for free</a>
+          </div>
+        </header>
         <div class="title">
           <h1>
             Optimize Your Online Experience with Our Advanced
@@ -55,7 +63,7 @@
           <a href="#" class="signUp-buttons">Sign Up</a>
           <a href="#" class="learnMore-buttons">Learn more</a>
         </div>
-        <div class="display">
+        <div class="display-one">
           <img src="./assets/images/Vector 2triangle.svg" alt="" />
           <div class="rectangular-container">
             <img src="./assets/images/Frame 1000001716arrow.svg" alt="" />
@@ -65,7 +73,7 @@
             </p>
           </div>
         </div>
-        <div class="display">
+        <div class="display-two">
           <img src="./assets/images/Ellipse 1oval.svg" alt="" />
           <img src="./assets/images/Rectangle 9diagonal rectangle.svg" alt="" />
         </div>
@@ -94,9 +102,10 @@
         </div>
       </div>
       <div class="section-two">
-        <img src="./assets/images/Line 70.svg" alt="">
+       <div class="section-two-top">
+        <img class="left-line" src="./assets/images/Line 70.svg" alt="">
         <div class="left-why">
-          <h4>Why choose Scissors</h3>
+          <h3>Why choose <span>Scissors</span></h3>
           <p>
             Scissors is the hub of everything that has to do with your link
             management. We shorten your URLs, allow you creating custom ones for
@@ -107,32 +116,51 @@
         </div>
         <div class="right-services">
           <div class="service-item">
-            <img src="./assets/images/Group 6link.svg" alt="icon">
-            <h3>URL Shortening</h3>
+            <div class="servi-icon">
+              <img src="./assets/images/Group 6link.svg" alt="icon">
+            </div>
+            <div class="servi-content">
+              <h3>URL Shortening</h3>
             <p>Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects.</p>
+            </div>
           </div>
           <div class="service-item">
-            <img src="./assets/images/Frame 1000001695edit.svg" alt="icon">
-            <H3>Custom URLs</H3>
+            <div class="servi-icon">
+              <img src="./assets/images/Frame 1000001695edit.svg" alt="icon">
+            </div>
+            <div class="servi-content">
+              <H3>Custom URLs</H3>
             <p>With Scissor, you can create custom URLs, with the length you want! A solution for socials and businesses.</p>
+            </div>
           </div>
           <div class="service-item">
+           <div class="servi-icon">
             <img src="./assets/images/Frame 1000001695QRcode.png" alt="icon">
-            <h3>QR Codes</h3>
+           </div>
+            <div class="servi-content">
+              <h3>QR Codes</h3>
             <p>Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution.</p>
+            </div>
           </div>
           <div class="service-item">
-            <img src="./assets/images/Frame 1000001718data.png" alt="icon">
-            <h3>Data Analytics</h3>
+            <div class="servi-icon">
+              <img src="./assets/images/Frame 1000001718data.png" alt="icon">
+            </div>
+            <div class="servi-content">
+              <h3>Data Analytics</h3>
             <p>Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress.</p>
+            </div>
           </div>
-        </div> 
+        </div>
+       </div> 
         <div class="price-heading">
-          <img src="./assets/images/Line 70.svg" alt="icon">
-          <h3>A price perfect for your needs.</h3>
+          <img class="left-line-two" src="./assets/images/Line 70.svg" alt="icon">
+          <h3>A <span>price perfect</span> for your needs.</h3>
+          <div class="price-content">
           <p>
             From catering for your personal, business, event, socials needs, you can be rest assured we have you in mind in our pricing.
           </p>
+         </div>
         </div>
         <div class="plans">
           <div class="plans-item">
@@ -177,9 +205,9 @@
           <button class="price">Select Pricing</button>
         </div>
       </div>
-      <div class="banner two">
-        <img src="./assets/images/Group 3left-banner.svg" alt="bg">
-        <img src="./assets/images/Group 2right-banner.svg" alt="bg">  
+      <div class="banner-two">
+        <img src="./assets/images/Group 3left-banner.svg" class="left-pattern" alt="bg">
+        <img src="./assets/images/Group 2right-banner.svg" class="right-pattern" alt="bg">  
         <div class="test-url">
           <div class="form-container">
             <div class="input-group">
@@ -210,10 +238,10 @@
         <P>FAQs</P>
       </div>
       <div class="faqs">
-        <img src="./assets/images/Group 3left-faqbg.svg" alt="bg">
-        <img src="./assets/images/Group 2bottom-rightfaq.svg" alt="bg">
+        <img src="./assets/images/Group 3left-faqbg.svg" class="left-pattern" alt="bg">
+        <img src="./assets/images/Group 2bottom-rightfaq.svg" class="right-pattern" alt="bg">
         <div class="title">
-          <img src="./assets/images/Line 70.svg" alt="icon">
+          <img src="./assets/images/Line 70.svg" class="left-line" alt="icon">
           <h2>FAQs</h2>
         </div>
         <div class="faqs-item">
@@ -256,15 +284,15 @@
     </dviv>
     <div class="footer">
       <div class=" banner footer-heading">
-        <img src="./assets/images/Group 2top-footer-left.svg" alt="bg">
-        <img src="./assets/images/Group 3top-footer-left.svg" alt="bg">
+        <img src="./assets/images/Group 2top-footer-left.svg" class="left-pattern" alt="bg">
+        <img src="./assets/images/Group 3top-footer-left.svg" class="right-pattern" alt="bg">
           <h2 class="title">Revolutionizing Link Optimization</h2>
           <a href="#">Get Started</a>
           <p>footer</p>
       </div>
       <div class="bottom-footer">
-        <img src="./assets/images/Group 3bottom-footer-left.svg" alt="bg">
-        <img src="./assets/images/Group 2bottom-footer-right.svg" alt="bg">
+        <img src="./assets/images/Group 3bottom-footer-left.svg" class="left-pattern" alt="bg">
+        <img src="./assets/images/Group 2bottom-footer-right.svg" class="right-pattern" alt="bg">
         <!-- Left Section (Logo & Social Icons) -->
         <div class="brand">
           <div class="logo">
@@ -305,6 +333,17 @@
               </ul>
           </div>
           <div class="footer-item">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Scissor</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+        </div>
+          <div class="footer-item">
               <h3>Resources</h3>
               <ul>
                   <li><a href="#">Blog</a></li>
@@ -336,24 +375,14 @@
                   <li><a href="#">Code of Conduct</a></li>
               </ul>
           </div>
-          <div class="footer-item">
-              <h3>Company</h3>
-              <ul>
-                  <li><a href="#">About Scissor</a></li>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">Partners</a></li>
-                  <li><a href="#">Press</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#">Reviews</a></li>
-              </ul>
-          </div>
+        </div>
+        <!-- Bottom Bottom Section -->
+        <div class="footer-end">
+          <p><a href="#">Terms of Service</a> | <a href="#">Security</a> | Scissor 2023</p>
+      </div>
       </div>
 
-  </div>
-    <!-- Bottom Bottom Section -->
-    <div class="footer-end">
-      <p><a href="#">Terms of Service</a> | <a href="#">Security</a> | Scissor 2023</p>
-  </div>
+  
       </div>
     </div>
   </body>
